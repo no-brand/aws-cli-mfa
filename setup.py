@@ -2,8 +2,9 @@
 
 from setuptools import setup, find_packages
 import re
+import os
 
-with open('aws-cli-mfa/__init__.py', encoding='utf8') as f:
+with open('awsclimfa/__init__.py', encoding='utf8') as f:
     version = re.search(r'__version__ = \'(.*)\'', f.read()).group(1)
     
 setup(

@@ -28,6 +28,9 @@ aws_secret_access_key = ...
 |--profile|AWS profile you want to use (--profile)|N        |AWS_PROFILE in your shell   |
 |--arn    |ARN of the MFA device (--serial-number)|N        |.credentials' mfa_device_arn|
 ```bash
+# Install module
+$ pip install aws-cli-mfa
+
 # Your profile should be 'lol'
 $ echo $AWS_PROFILE
   lol

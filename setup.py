@@ -13,8 +13,14 @@ setup(
     description='',
     install_requires=['boto3'],
     packages=find_packages(exclude=['tests*']),
+    include_package_data=True,
     author='no-brand',
     author_email='do.dream.david@gmail.com',
     url='https://github.com/no-brand/aws-cli-mfa',
-    license='MIT'
+    license='MIT',
+    entry_points={
+        'console_scripts': [
+            'aws-cli-mfa=awsclimfa.main:run'
+        ]
+    }
 )

@@ -1,0 +1,2 @@
+include MANIFEST.in
+include awsclimfa/log/config.yaml

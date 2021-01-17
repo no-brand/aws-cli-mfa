@@ -16,5 +16,5 @@ setup(
     author='no-brand',
     author_email='do.dream.david@gmail.com',
     url='https://github.com/no-brand/aws-cli-mfa',
-    license='Apache-2.0 License'
+    license='MIT'
 )

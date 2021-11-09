@@ -14,7 +14,7 @@ def run():
 
     # aws sts get-session-token --serial-number $MFA_DEVICE_ARN --token-code $TOKEN_CODE
     parser = argparse.ArgumentParser(description='Get and enable your AWS session token. Furthermore, ')
-    parser.add_argument('--mfa', help='MFA token code (get-session-token --token-code)', type=int, required=True)
+    parser.add_argument('--mfa', help='MFA token code (get-session-token --token-code)', type=str, required=True)
     parser.add_argument('--profile', help='AWS profile you want to use (get-session-token --profile)', type=str, default=os.getenv('AWS_PROFILE'))
     parser.add_argument('--arn', help='ARN of the MFA device (get-session-token --serial-number)', type=str)
     parser.add_argument('--assume_role', help='ARN of the role to assume (assume-role --role-arn)', type=str)

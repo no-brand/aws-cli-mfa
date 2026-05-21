@@ -16,7 +16,7 @@ setup(
     description='It can help you to access AWS resources through AWS CLI with MFA token',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    install_requires=['boto3'],
+    install_requires=['boto3', 'PyYAML'],
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
     author='no-brand',
